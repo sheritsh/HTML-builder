@@ -59,7 +59,7 @@ async function generateHTML() {
 }
 
 // make style bundle -> style.css
-function BundleCSS() {
+function bundleCSS() {
   fs.readdir(stylesDir, { withFileTypes: true }, (err, files) => {
     if (err) throw err;
 
@@ -81,4 +81,4 @@ function BundleCSS() {
 }
 
 generateHTML();
-BundleCSS();
+bundleCSS();
